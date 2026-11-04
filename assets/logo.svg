@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="diskBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1320" />
+      <stop offset="50%" stop-color="#111c2e" />
+      <stop offset="100%" stop-color="#070c16" />
+    </linearGradient>
+    <linearGradient id="diskAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="diskGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="240" rx="16" fill="url(#diskBg)" stroke="#1e293b" stroke-width="2"/>
+  
+  <path d="M 0 60 L 800 60 M 0 120 L 800 120 M 0 180 L 800 180" stroke="#1e293b" stroke-width="1" stroke-opacity="0.3"/>
+  <path d="M 200 0 L 200 240 M 400 0 L 400 240 M 600 0 L 600 240" stroke="#1e293b" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Logo Mark (Shield + Storage Disk Invariant) -->
+  <g transform="translate(60, 45)">
+    <!-- Outer Shield -->
+    <path d="M 75 10 L 135 30 L 135 85 C 135 125 75 145 75 145 C 75 145 15 125 15 85 L 15 30 Z" fill="#0f172a" stroke="url(#diskAccent)" stroke-width="3" filter="url(#diskGlow)"/>
+    <path d="M 75 15 L 130 33 L 130 85 C 130 120 75 138 75 138 C 75 138 20 120 20 85 L 20 33 Z" fill="#0b1320" stroke="#10b981" stroke-width="1.5"/>
+    
+    <!-- Hard Disk Platters -->
+    <ellipse cx="75" cy="55" rx="35" ry="12" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <ellipse cx="75" cy="72" rx="35" ry="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <ellipse cx="75" cy="89" rx="35" ry="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- Laser check mark -->
+    <path d="M 62 70 L 72 80 L 92 58" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(240, 75)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      disk<tspan fill="url(#diskAccent)">opt</tspan>
+    </text>
+    
+    <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#34d399" letter-spacing="1.5">
+      DETERMINISTIC STORAGE SRE GUARDRAIL
+    </text>
+
+    <text y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">
+      Zero Dependencies • Crash-Proof Root Shielding • Runway Cache Pruner
+    </text>
+
+    <!-- Badges -->
+    <g transform="translate(0, 96)">
+      <rect width="90" height="22" rx="4" fill="#1e293b"/>
+      <text x="45" y="15" font-family="monospace" font-size="11" font-weight="bold" fill="#34d399" text-anchor="middle">ZERO-DEP</text>
+      
+      <rect x="100" width="105" height="22" rx="4" fill="#1e293b"/>
+      <text x="152" y="15" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle">ROOT-SHIELDED</text>
+      
+      <rect x="215" width="85" height="22" rx="4" fill="#1e293b"/>
+      <text x="257" y="15" font-family="monospace" font-size="11" font-weight="bold" fill="#a78bfa" text-anchor="middle">SRE-AUDITED</text>
+    </g>
+  </g>
+</svg>

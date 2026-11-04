@@ -1,10 +1,28 @@
-# diskopt
+<div align="center">
 
-[![CI](https://github.com/Amz34/diskopt/actions/workflows/ci.yml/badge.svg)](https://github.com/Amz34/diskopt/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](#)
+<p align="center">
+  <img src="assets/logo.svg" alt="diskopt logo" width="650">
+</p>
 
-`diskopt` is a lightweight, zero-dependency storage optimization CLI and SRE guardrail engine designed for production Linux servers, cloud VM shapes (OCI, AWS, GCP), and AI agent workspaces.
+# 🚀 diskopt
+
+**High-Performance Storage Optimization & Deterministic SRE Boundary Guard for AI VM Host Infrastructure**
+
+[![Python: 3.10+](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
+[![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://cloud.oracle.com)
+[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://cloudflare.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)](LICENSE)
+
+<br>
+
+**[⚡ Quick Start](#-quick-start)** · **[🏗️ Architecture](#️-system-architecture)** · **[🛡️ SRE Guardrails](#-fail-safe-guardrails)** · **[📊 Telemetry](#telemetry--json-mode)**
+
+</div>
+
+---
+ is a lightweight, zero-dependency storage optimization CLI and SRE guardrail engine designed for production Linux servers, cloud VM shapes (OCI, AWS, GCP), and AI agent workspaces.
 
 It audits disk usage distribution, detects runway caches (npm, uv, pip, playwright, /tmp), and performs safe, crash-proof pruning protected by non-bypassable filesystem boundary guardrails.
 
