@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="assets/logo.svg" alt="diskopt logo" width="650">
+  <img src="assets/icon.svg" width="128" height="128" alt="diskopt icon: SRE guardrail shield on emerald squircle tile">
 </p>
 
 # 🚀 diskopt
